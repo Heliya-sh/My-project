@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                body{
+                    background-color:#f3e7ff;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                }
+                .picture{
+                    width: 100%;
+                    height: auto;
+                }
+                .mobile{display: block;}
+                .desktop{display: none}
+                .info-box{
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                    bottom: -150%;
+                    z-index: 10;
+                    width: 75%;
+                    height: 550px;
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 12px;
+                    margin: auto;
+                    font-family: 'Segoe UI', system-ui, sans-serif;
+                }
+                .icon-text{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                .icon-text2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                }
+                @media(min-width:1024px){
+                    .mobile{display: none;}
+                    .desktop{display: block;}
+                    .info-box{bottom: -100%;width: 40%;}
+                }
+                .text-color{
+                    color: hsl(0, 1%, 63%);
+                }
+                hr{
+                    border: none;
+                    height: 1px;
+                    background-color: #e0e0e0;
+                }
+            </style>
+    </head>
+    <body>
+        <img src="c:\Users\Kosar\Desktop\faq-accordion-main\assets\images\background-pattern-mobile.svg" class="picture mobile" alt="background-pattern-mobile">
+        <img src="c:\Users\Kosar\Desktop\faq-accordion-main\assets\images\background-pattern-desktop.svg" class="picture desktop" alt="background-pattern-desktop">
+        <div class="info-box">
+            <div class="icon-text">
+            <img src="c:\Users\Kosar\Desktop\faq-accordion-main\assets\images\icon-star.svg" alt="star"><h1>FAQs</H1>
+            </div>
+            <div class="icon-text2">
+            <p><b>What is Frontend Mentor,<br>and how will it help me?</b></p>
+            <img src="c:\Users\Kosar\Desktop\faq-accordion-main\assets\images\icon-minus.svg" alt="minus">
+            </div>
+            <p class="text-color">Frontend Mentor offers realistic coding challenges to help developers improve their Frontend codding skills with projects in HTML, CSS, and JavaScript.Its suitable for all levels and ideal for portfolio building.</p>
+            <br>
+            <hr>
+            <div class="icon-text2">
+            <p><b>Is Frontend Mentor free?</b></p>
+            <img src="c:\Users\Kosar\Desktop\faq-accordion-main\assets\images\icon-plus.svg" alt="plus">
+            </div>
+            <hr>
+            <div class="icon-text2">
+            <p><b>Can i use Frontend Mentor<br> projects in my portfolio?</b></p> 
+            <img src="c:\Users\Kosar\Desktop\faq-accordion-main\assets\images\icon-plus.svg" alt="plus">
+            </div>
+            <hr>
+            <div class="icon-text2">
+            <p><b>How can i get help if im<br>stuck on a challenge?</b></p>
+            <img src="c:\Users\Kosar\Desktop\faq-accordion-main\assets\images\icon-plus.svg" alt="plus">
+            </div>
+        </div>
+    </body>
+</html>
