@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #E0F1E8;
+            font-family: Arial, sans-serif;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .input-box {
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+        }
+        .consent {
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            gap: 10px;
+        }
+        .messagebox {
+            width: 100%;
+            height: 100px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+
+        .button {
+            background-color: #178a6f;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+        }
+
+        .info-box form{
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            height: auto;
+            min-height: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .name-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radio-option input[type="radio"] {
+            margin: 0;
+            margin-left: 15px;
+        }
+
+        .margin {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 1024px) {
+            .info-box form{
+                width: 600px;
+                max-width: 600px;
+                margin: 60px auto;
+                height: auto;
+                min-height: unset;
+                gap: 0;
+            }
+
+            .name-container {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .name-box {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info-box">
+        <form action="#" method="post">
+            <h1><span style="color: black;">Contact Us</span></h1>
+            <div class="name-container">
+                <div class="name-box">
+                    <label for="First Name" class="margin">First Name &nbsp;<span
+                            style="color: darkgreen;">*</span></label>
+                    <input type="text" id="First Name" name="First Name" class="input-box" required>
+                </div>
+                <div class="name-box">
+                    <label for="Last Name" class="margin">Last Name &nbsp;<span
+                            style="color: darkgreen;">*</span></label>
+                    <input type="text" id="Last Name" name="Last Name" class="input-box" required>
+                </div>
+            </div>
+            <lable for="Email Address" class="margin">Email Address &nbsp;<span style="color: darkgreen;">*</span>
+            </lable>
+            <input type="text" id="Email address" name="Email Address" class="input-box" required>
+            <label class="margin">Qurey Type &nbsp;<span style="color: darkgreen;">*</span></label>
+            <div class="name-container">
+                <div class="name-box">
+                    <div class="input-box radio-option">
+                        <input type="radio" id="general" name="QureyType" value="general" required>
+                        <label for="general">General Enquiry</label>
+                    </div>
+                </div>
+                <div class="name-box">
+                    <div class="input-box radio-option">
+                        <input type="radio" id="support" name="QureyType" value="support" readonly>
+                        <label for="support">Support Request</label>
+                    </div>
+                </div>
+            </div>
+            <label class="margin">Message &nbsp;<span style="color: darkgreen;">*</span></label>
+            <textarea name="Message" class="messagebox"></textarea>
+            <div class="consent">
+                <input id="agree-checkbox" type="checkbox" name="agree" required>
+                <label for="agree-checkbox">I consent to being contacted by the team</label>
+            </div>
+            <button type="submit" class="button">submit</button>
+        </form>
+    </div>
+</body>
+</html>
