@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #f3e7ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hover-text {
+            color: black;
+            cursor: default;
+        }
+
+        .hover-text:hover {
+            color: purple;
+            cursor: pointer;
+        }
+
+        .info-box {
+            width: 75%;
+            height: 550px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: auto;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: -80px auto 0 auto;
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icon-text2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .bg-box {
+            width: 100%;
+            height: 33vh;
+            background-image: url('assets/images/background-pattern-mobile.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media(min-width:1024px) {
+            .bg-box {
+                width: 100%;
+                height: 33.33vh;
+            }
+
+            .info-box {
+                width: 40%;
+            }
+        }
+
+        .text-color {
+            color: hsl(0, 1%, 63%);
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-box"></div>
+    <div class="info-box">
+        <div class="icon-text">
+            <img src="assets/images/icon-star.svg" alt="star">
+            <h1>FAQs</H1>
+        </div>
+        <div class="icon-text2">
+            <p class="hover-text"><b>What is Frontend Mentor,<br>and how will it help me?</b></p>
+            <img src="assets/images/icon-minus.svg" alt="minus">
+        </div>
+        <p class="text-color">Frontend Mentor offers realistic coding challenges to help developers improve their
+            Frontend codding skills with ojects in HTML, CSS, and JavaScript.Its suitable for all levels and ideal
+            for portfolio building.</p>
+        <br>
+        <hr>
+        <div class="icon-text2">
+            <p class="hover-text"><b>Is Frontend Mentor free?</b></p>
+            <img src="assets/images/icon-plus.svg" alt="plus">
+        </div>
+        <hr>
+        <div class="icon-text2">
+            <p class="hover-text"><b>Can i use Frontend Mentor<br> ojects in my portfolio?</b></p>
+            <img src="assets/images/icon-plus.svg" alt="plus">
+        </div>
+        <hr>
+        <div class="icon-text2">
+            <p class="hover-text"><b>How can i get help if im<br>stuck on a challenge?</b></p>
+            <img src="assets/images/icon-plus.svg" alt="plus">
+        </div>
+
+    </div>
+</body>
+
+</html>
